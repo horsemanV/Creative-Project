@@ -1,4 +1,13 @@
-.rgb-rgb {
-	height: 100px;
-	width: 100px;
+.rgb-display {
+	height: 150px;
+	width: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.rgb-display__color {
+	width: 50%;
+	height: 50%;
 }

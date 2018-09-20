@@ -11,31 +11,58 @@
 	<script defer src="src/js/index.js"></script>
 </head>
 <body>
-	<header></header>
+	<header>
+		<h1>RGB Color Picker</h1>
+	</header>
 	<main>
-		<section>
-			<div class="rgb-r">
+		<article>
+			<section class="rgb--r">
 				<label>R</label>
-				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider-r">
-				<input type="number" min="0" max="255" step="1" value="0"class="rgb-display rgb-display-r">
-				<button>Reset R</button>
-			</div>
-			<div class="rgb-g">
+				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider--r">
+				<input type="number" min="0" max="255" step="1" value="0"class="rgb-entry rgb-entry--r">
+				<figure class="rgb-display rgb-display--r">
+					<span class="rgb-display__color"></span>
+					<figcaption class="rgb-display__caption">
+						<code></code>
+					</figcaption>
+				</figure>
+				<button class="rgb-reset rgb-reset--r">Reset R</button>
+			</section>
+			<section class="rgb--g">
 				<label>G</label>
-				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider-g">
-				<input type="number" min="0" max="255" step="1" value="0"class="rgb-display rgb-display-g">
-				<button>Reset G</button>
-			</div>
-			<div class="rgb-b">
+				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider--g">
+				<input type="number" min="0" max="255" step="1" value="0"class="rgb-entry rgb-entry--g">
+				<figure class="rgb-display rgb-display--g">
+					<span class="rgb-display__color"></span>
+					<figcaption class="rgb-display__caption">
+						<code></code>
+					</figcaption>
+				</figure>
+				<button class="rgb-reset rgb-reset--g">Reset G</button>
+			</section>
+			<section class="rgb--b">
 				<label>B</label>
-				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider-b">
-				<input type="number" min="0" max="255" step="1" value="0"class="rgb-display rgb-display-b">
-				<button>Reset B</button>
-			</div>
-			<div class="rgb-rgb" width="100px" height="100px">
-			</div>
-			<button>Reset All</button>
-		</section>
+				<input type="range" min="0" max="255" step="1" value="0" class="rgb-slider rgb-slider--b">
+				<input type="number" min="0" max="255" step="1" value="0"class="rgb-entry rgb-entry--b">
+				<figure class="rgb-display rgb-display--b">
+					<span class="rgb-display__color"></span>
+					<figcaption class="rgb-display__caption">
+						<code></code>
+					</figcaption>
+				</figure>
+				<button class="rgb-reset rgb-reset--b">Reset B</button>
+			</section>
+			<section class="rgb--rgb">
+				<label>RGB</label>
+				<figure class="rgb-display rgb-display--rgb">
+					<span class="rgb-display__color"></span>
+					<figcaption class="rgb-display__caption">
+						<code></code>
+					</figcaption>
+				</figure>
+				<button class="rgb-reset rgb-reset--rgb">Reset All</button>
+			</section>
+		</article>
 	</main>
 	<footer></footer>
 </body>
